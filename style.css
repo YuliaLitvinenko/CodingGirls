@@ -179,3 +179,33 @@ color: #a3c83a
   	font-weight: 300;
 	font-size: 14px;
 }
+
+.article-1-highlighting {
+	position: relative;
+	height: 299px;
+}
+
+.article-1-highlighting::before {
+	display: block;
+	width: 603px;
+	height: 299px;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.article-1-highlighting-text {
+	display: none;
+	width: 603px;
+	position: absolute;
+	top: 100px;
+	text-align: center;
+}
+
+
+.article-1-highlighting:hover .article-1-highlighting-text {
+	display:block;
+}
+
+.article-1-highlighting:hover::before {
+	content: '';
+}

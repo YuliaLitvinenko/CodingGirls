@@ -1,3 +1,39 @@
+@font-face{
+  src: url("./fonts/AvenirNext/AvenirNextCyr-Regular.ttf");
+  font-family: 'AvenirNext';
+  font-weight: 300;
+}
+
+@font-face{
+  src: url("./fonts/AvenirNext/AvenirNextCyr-Demi.ttf");
+  font-family: 'AvenirNext';
+  font-weight: 600;
+}
+
+@font-face{
+  src: url("./fonts/OpenSans/OpenSans-Regular.ttf");
+  font-family: 'OpenSans';
+  font-weight: 300;
+}
+
+@font-face{
+  src: url("./fonts/OpenSans/OpenSans-Regular.ttf");
+  font-family: 'OpenSans';
+  font-weight: 100;
+}
+
+@font-face{
+  src: url("./fonts/ProximaNova/ProximaNova-Reg.otf");
+  font-family: 'ProximaNova';
+  font-weight: 300;
+}
+
+@font-face{
+  src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+
 .header {
 	background-image: url(./images/background.jpg);
 	background-repeat: no-repeat;
@@ -25,13 +61,16 @@
 	font-size: 13px;
 	text-transform: uppercase;
 	list-style: none;
-
+	font-family: 'AvenirNext';
+  	font-weight: 300;
 }
 
 .motto-title{
 	color: #ffffff;
 	font-size: 40px;
 	text-transform: uppercase;
+	font-family: 'AvenirNext';
+    font-weight: 300;
 	margin-top: 500px;
 	margin-left: 50px;
 	margin-bottom: 0px;
@@ -43,6 +82,8 @@ color: #a3c83a
 
 .motto-subtitle{
 	color: #ffffff;
+	font-family: 'OpenSans';
+  	font-weight: 300;
 	font-size: 15px;
 	text-transform: uppercase;
 	margin-left: 130px;
@@ -70,17 +111,23 @@ color: #a3c83a
 }
 
 .main-info-title{
-	font-size: 21px;
+	font-size: 24px;
+	font-family: 'OpenSans';
+  	font-weight: 300;
 }
 
 .main-info-text{
 	font-size: 14px;
+	font-family: 'ProximaNova';
+  	font-weight: 300;
 }
 
 .link-white{
 	color: #ffffff;
 	font-size: 14px;
 	text-decoration: none;
+	font-family: 'ProximaNova';
+  	font-weight: 300;
 }
 
 .article {
@@ -99,28 +146,36 @@ color: #a3c83a
 }
 
 .article-title {
-color: #a3c83a;
-text-transform: uppercase;
-font-size: 21px;
-margin-top: 0px;
-margin-bottom: 10px;
+	color: #a3c83a;
+	text-transform: uppercase;
+	font-family: 'OpenSans';
+	font-weight: 100;
+	font-size: 35px;
+	margin-top: 0px;
+	margin-bottom: 10px;
 }
 
 .article-subtitle {
-color: #fa6352;
-text-transform: uppercase;
-font-size: 12px;
-margin-top: 15px;
-margin-bottom: 0px;
+	color: #fa6352;
+	text-transform: uppercase;
+	font-family: 'Montserrat';
+  	font-weight: 300;
+	font-size: 14px;
+	margin-top: 15px;
+	margin-bottom: 0px;
 }
 
 .article-preview{
 	color: #656d72;
-	font-size: 15px;
+	font-family: 'OpenSans';
+  	font-weight: 300;
+	font-size: 14px;
 	margin: 10px;
 }
 
 .article-link {
 	color: #a3c83a;
-	font-size: 15px;
+	font-family: 'OpenSans';
+  	font-weight: 300;
+	font-size: 14px;
 }

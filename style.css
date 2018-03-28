@@ -102,6 +102,7 @@ color: #a3c83a
 	display: flex;
 	justify-content: space-between;
 	margin: auto;
+	align-items: center;
 	padding-top: 80px;
 	padding-left: 0;
 	width: 900px;
@@ -110,16 +111,25 @@ color: #a3c83a
 	color: #ffffff;
 }
 
+
+.main-info-block {
+	width: 220px;
+	align-self: baseline;
+}
+
 .main-info-title{
 	font-size: 24px;
 	font-family: 'OpenSans';
   	font-weight: 300;
+  	padding: 10px 0px 10px 0px;
 }
 
 .main-info-text{
 	font-size: 14px;
 	font-family: 'ProximaNova';
   	font-weight: 300;
+  	text-align: left;
+  	padding: 10px 0px 10px 0px;
 }
 
 .link-white{

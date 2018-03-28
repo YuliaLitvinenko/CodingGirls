@@ -216,11 +216,14 @@ color: #a3c83a
 	position: relative;
 }
 
-.form {
-	position: absolute;
-	top: 31px;
-	left: 250px;
-
+.footer-links {
+	display: flex;
+	max-width: 850px;
+	min-width: 800px;
+	justify-content: space-between;
+	margin: auto;
+	position: relative;
+	top: 31px
 }
 
 .form-input-name {
@@ -265,9 +268,6 @@ color: #a3c83a
 	display: flex;
 	justify-content: space-between;
 	width: 200px;
-	position: absolute;
-	top: 31px;
-	right: 200px;
 }
 
 .footer-menu-element-fb {
@@ -276,6 +276,7 @@ color: #a3c83a
 	height: 38px;
 	width: 38px;
 	border-radius: 50%;
+	position: relative;
 }
 
 .footer-menu-element-tw {
@@ -284,6 +285,7 @@ color: #a3c83a
 	height: 38px;
 	width: 38px;
 	border-radius: 50%;
+	position: relative;
 }
 
 .footer-menu-element-yt {
@@ -292,6 +294,7 @@ color: #a3c83a
 	height: 38px;
 	width: 38px;
 	border-radius: 50%;
+	position: relative;
 }
 
 .footer-menu-element-li {
@@ -300,6 +303,7 @@ color: #a3c83a
 	height: 38px;
 	width: 38px;
 	border-radius: 50%;
+	position: relative;
 }
 
 .footer-menu-element-fb::after {
@@ -321,7 +325,7 @@ color: #a3c83a
     width: 18px;
     position: absolute;
     top: 8px;
-    left: 65px;
+    left: 12px;
 }
 
 .footer-menu-element-yt::before {
@@ -332,7 +336,7 @@ color: #a3c83a
     width: 18px;
     position: absolute;
     top: 8px;
-    left: 120px;
+    left: 11px;
 }
 
 .footer-menu-element-li::before {
@@ -343,5 +347,5 @@ color: #a3c83a
     width: 18px;
     position: absolute;
     top: 8px;
-    left: 175px;
+    left: 12px;
 }

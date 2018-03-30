@@ -337,8 +337,8 @@ color: #a3c83a
 	content: '';
 	background-image: url(./images/tw.svg);
 	background-repeat: no-repeat; 
-	height: 18px;
-    width: 18px;
+	width: 19px;
+	height: 16px;
     position: absolute;
     top: 8px;
     left: 12px;
@@ -348,8 +348,8 @@ color: #a3c83a
 	content: '';
 	background-image: url(./images/yt.svg);
 	background-repeat: no-repeat; 
-	height: 18px;
-    width: 18px;
+	width: 21px;
+	height: 15px;
     position: absolute;
     top: 8px;
     left: 11px;
@@ -359,8 +359,8 @@ color: #a3c83a
 	content: '';
 	background-image: url(./images/ln.svg);
 	background-repeat: no-repeat; 
-	height: 18px;
-    width: 18px;
+	width: 19px;
+	height: 19px;
     position: absolute;
     top: 8px;
     left: 12px;

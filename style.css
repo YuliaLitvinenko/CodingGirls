@@ -17,7 +17,7 @@
 }
 
 @font-face{
-  src: url("./fonts/OpenSans/OpenSans-Regular.ttf");
+  src: url("./fonts/OpenSans/OpenSans-Light.ttf");
   font-family: 'OpenSans';
   font-weight: 100;
 }
@@ -238,16 +238,22 @@ color: #a3c83a
 
 .form-input-name {
 	width: 100px;
+	height: 15px;
 	padding: 10px 20px;
 	border: none;
 	border-radius: 4px;
+	font-family: ProximaNova;
+	font-size: 15px;
 }
 
 .form-input-email {
 	width: 170px;
+	height: 15px;
 	padding: 10px 20px;
 	border: none;
 	border-radius: 4px;
+	font-family: ProximaNova;
+	font-size: 15px;
 }
 
 .form-button {
@@ -316,12 +322,12 @@ color: #a3c83a
 	position: relative;
 }
 
-.footer-menu-element-fb::after {
+.footer-menu-element-fb::before {
 	content: '';
 	background-image: url(./images/fb.svg);
 	background-repeat: no-repeat; 
-	height: 18px;
-    width: 18px;
+	width: 11px;
+	height: 19px;
     position: absolute;
     top: 8px;
     left: 14px;

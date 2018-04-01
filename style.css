@@ -67,6 +67,21 @@
   	font-weight: 300;
 }
 
+.nav-menu:hover {
+  animation: menu 0.2s ease-in-out 5;
+  animation-play-state: running;
+}
+  
+@keyframes menu {
+  0% {
+	transform: translate(0,0);
+  }
+  
+  100% {
+	transform: translate(0,-8%);
+  }
+}
+
 .motto-title{
 	color: #ffffff;
 	font-size: 40px;
@@ -210,6 +225,22 @@ color: #a3c83a
 	font-size: 14px;
 }
 
+.article-link:hover {
+  animation: link 0.1s ease-in;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes link {
+  0% {
+	color: #a3c83a;
+  }
+  
+  100% {
+	color:#fa6352;
+	}
+}
+
 .article-1-highlighting {
 	position: relative;
 	height: 320px;
@@ -231,6 +262,7 @@ color: #a3c83a
 	top: 100px;
 	text-align: center;
 }
+
 
 .article-1-highlighting:hover .article-1-highlighting-text {
 	opacity: 1;
@@ -297,6 +329,16 @@ color: #a3c83a
   animation-play-state: running;
   animation-fill-mode: forwards;
 }
+  
+@keyframes button {
+  0% {
+	background-color: #a3c83a;
+  }
+  
+  100% {
+	background-color: #c7e86b;
+	}
+}
 
 .form-button::after {
 	content: '';
@@ -325,6 +367,22 @@ color: #a3c83a
 	position: relative;
 }
 
+.footer-menu-element-fb:hover {
+  animation: fb 0.1s linear;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes fb {
+  0% {
+	background-color: #2f3590;
+  }
+  
+  100% {
+	background-color: #6267b5;
+	}
+}
+
 .footer-menu-element-tw {
 	list-style: none;
 	background-color: #1eaeeb;
@@ -332,6 +390,22 @@ color: #a3c83a
 	width: 40px;
 	border-radius: 50%;
 	position: relative;
+}
+
+.footer-menu-element-tw:hover {
+  animation: tw 0.1s linear;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes tw {
+  0% {
+	background-color: #1eaeeb;
+  }
+  
+  100% {
+	background-color: #64cdfa;
+	}
 }
 
 .footer-menu-element-yt {
@@ -343,6 +417,22 @@ color: #a3c83a
 	position: relative;
 }
 
+.footer-menu-element-yt:hover {
+  animation: yt 0.1s linear;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes yt {
+  0% {
+	background-color: #ea342d;
+  }
+  
+  100% {
+	background-color: #ff7a75;
+	}
+}
+
 .footer-menu-element-li {
 	list-style: none;
 	background-color: #19218c;
@@ -350,6 +440,22 @@ color: #a3c83a
 	width: 40px;
 	border-radius: 50%;
 	position: relative;
+}
+
+.footer-menu-element-li:hover {
+  animation: li 0.1s linear;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes li {
+  0% {
+	background-color: #19218c;
+  }
+  
+  100% {
+	background-color: #424ab3;
+	}
 }
 
 .footer-menu-element-fb::before {

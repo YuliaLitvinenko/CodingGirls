@@ -32,7 +32,7 @@
       .cls-1 {
         font-size: 60px;
         fill: #f4f2f2;
-        font-family: EntypoSocial;
+        font-family: "Entypo Social";
       }
     </style>
   </defs>

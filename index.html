@@ -5,7 +5,9 @@
   <title>FITNESS IN A CAN</title>
   <meta name="keywords" content="fitness, fitness in a can, training, love your body">
   <meta name="description" content="Fitness in a can webpage">
- <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="eric-meyer-reset.min_.css">
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -22,32 +24,32 @@
         </ul>
       </nav>
     </div>
-    <h1 class="motto-title">Fitness in a can <span class="span-1">/</span></h1>
+    <h1 class="motto-title">Fitness in a can<span class="span-1">/</span></h1>
     <h2 class="motto-subtitle">Yes you can <span class="span-2">/</span></h2>
   </header>
 
   <main class="main"> 
     <section>
         <ul class="main-info-container" >
-          <li>
+          <li class="main-info-block">
             <img src="./images/icon1.svg">
             <h3 class="main-info-title">Resources</h3>
             <p class="main-info-text">Easily manage your inspiration and our inspiration and our inspiration and our inspiration and our inspiration and our inspiration and our inspiration and...</p>
             <a href="" class="link-white" >Explore more</a>
           </li>
-          <li>
+          <li class="main-info-block">
             <img src="./images/icon2.svg">
             <h3 class="main-info-title">Training & Funding</h3>
             <p class="main-info-text">Easily manage your inspiration and our inspiration and our inspiration and our inspiration and our inspiration and...</p>
             <a href="" class="link-white">Browse training</a>
           </li>
-          <li>
+          <li class="main-info-block">
             <img src="./images/icon3.svg">
             <h3 class="main-info-title">Connect</h3>
             <p class="main-info-text">Easily manage your inspiration and our inspiration and our inspiration and our inspiration and our inspiration and our inspiration and our inspiration and...</p>
             <a href="" class="link-white">Connect now</a>
           </li>
-          <li>
+          <li class="main-info-block">
             <img src="./images/icon4.svg">
             <h3 class="main-info-title">Communicate</h3>
             <p class="main-info-text">Easily manage your inspiration and our inspiration and our inspiration and our inspiration and our inspiration and our inspiration and...</p>
@@ -62,10 +64,22 @@
             <p class="article-preview">Lorem ipsum...</p>
             <a href="" class="article-link">Read more</a>
           </div>
-          <img src="./images/img1.jpg" height="299px">
+          <div class="article-1-highlighting" height="299px">
+            <img src="./images/img1.jpg" height="299px">
+            <div class="article-1-highlighting-text">
+            <h4 class="article-title">Fitness first</h4> 
+            <h5 class="article-subtitle">It's all about</h5>
+            </div>
+          </div>
         </article>
         <article class="article">
-          <img src="./images/img2.jpg" height="299px">
+          <div class="article-1-highlighting" height="299px">
+            <img src="./images/img2.jpg" height="299px">
+            <div class="article-1-highlighting-text">
+            <h5 class="article-subtitle">Love your</h5>
+            <h4 class="article-title">Your body</h4> 
+            </div>
+          </div>
           <div class="article-text">              
             <h5 class="article-subtitle">Love your</h5>
             <h4 class="article-title">Your body</h4>
@@ -77,28 +91,20 @@
     </section>
   </main>
 
-  <footer>
-    <form>
-      <input type="text" name="Name" placeholder="Your name">
-      <input type="text" name="Email" placeholder="Your Email">
-      <button>Join Newsletter</button>
-    </form>
-    <ul>
-      <li>
-        <a href="">
-          <img src="">
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <img src="">
-        </a>
-      </li>      <li>
-        <a href="">
-          <img src="">
-        </a>
-      </li>
-    </ul>
+  <footer class="footer">
+    <div class="footer-links">
+      <form>
+        <input class="form-input-name" type="text" name="Name" placeholder="Your name">
+        <input class="form-input-email" type="text" name="Email" placeholder="Your Email">
+        <button class="form-button">Join Newsletter</button>
+      </form>
+      <ul class="footer-menu">
+        <li class="footer-menu-element-fb"><a href="https://www.facebook.com/julia.litvinenko50"></a></li>
+        <li class="footer-menu-element-tw"><a href="https://www.facebook.com/julia.litvinenko50"></a></li>
+        <li class="footer-menu-element-yt"><a href="https://www.facebook.com/julia.litvinenko50"></a></li>
+        <li class="footer-menu-element-li"><a href="https://www.facebook.com/julia.litvinenko50"></a></li>
+      </ul>
+    </div>
   </footer>
 </body>
 

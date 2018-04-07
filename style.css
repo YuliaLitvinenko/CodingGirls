@@ -121,7 +121,7 @@ color: #a3c83a
 	margin: auto;
 	padding-top: 110px;
 	padding-left: 0;
-	width: 960px;
+	width: 1185px;
 	padding-bottom: 120px;
 	list-style: none;
 	color: #ffffff;
@@ -132,7 +132,7 @@ color: #a3c83a
 }
 
 .main-info-block {
-	width: 220px;
+	width: 285px;
 }
 
 .main-info-title {
@@ -177,16 +177,16 @@ color: #a3c83a
 .article {
 	display: flex;
 	justify-content: space-between;
-	width: 960px;
+	width: 1185px;
 	margin: auto;
 	background: #ffffff;
 
 }
 
 .article-text{
-	width: 320px;
+	width: 394px;
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 30px;
 }
 
 .article-title {
@@ -196,7 +196,7 @@ color: #a3c83a
 	font-weight: 100;
 	font-size: 35px;
 	margin-top: 0px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .article-subtitle {
@@ -204,7 +204,7 @@ color: #a3c83a
 	text-transform: uppercase;
 	font-family: 'Montserrat';
   	font-weight: 300;
-	font-size: 14px;
+	font-size: 16px;
 	margin-top: 25px;
 	margin-bottom: 0px;
 }
@@ -214,8 +214,8 @@ color: #a3c83a
 	font-family: 'OpenSans';
   	font-weight: 300;
 	font-size: 14px;
-	line-height: 1.5;
-	margin: 10px 45px 5px 45px;
+	line-height: 2.0;
+	margin: 15px 50px 5px 50px;
 }
 
 .article-link {
@@ -243,23 +243,24 @@ color: #a3c83a
 
 .article-1-highlighting {
 	position: relative;
-	height: 320px;
+	height: 394px;
 }
 
 .article-1-highlighting::before {
 	content: '';
 	opacity: 0;
-	width: 645px;
-	height: 320px;
+	width: 795px;
+	height: 394px;
 	position: absolute;
 	background: rgba(0, 0, 0, 0.5);
 }
 
 .article-1-highlighting-text {
 	opacity: 0;
-	width: 645px;
+	width: 790px;
 	position: absolute;
-	top: 100px;
+	top: 50%;
+	margin-top: -37px;
 	text-align: center;
 }
 
@@ -283,44 +284,44 @@ color: #a3c83a
 
 .footer-links {
 	display: flex;
-	max-width: 900px;
+	max-width: 1105px;
 	min-width: 850px;
 	justify-content: space-between;
 	align-items: center;
 	margin: auto;
 	position: relative;
-	top: 45px;
+	top: 50px;
 }
 
 .form-input-name {
-	width: 125px;
-	height: 16px;
+	width: 160px;
+	height: 30px;
 	padding: 10px 20px;
 	border: none;
 	border-radius: 4px;
 	font-family: ProximaNova;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .form-input-email {
-	width: 240px;
-	height: 16px;
+	width: 300px;
+	height: 30px;
 	padding: 10px 20px;
 	border: none;
 	border-radius: 4px;
 	font-family: ProximaNova;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .form-button {
-	width: 155px;
-	padding: 10px;
+	width: 185px;
+	padding: 18px 20px 18px 0px;
 	border: none;
 	border-radius: 4px;
 	background-color: #a3c83a;
 	color: #ffffff;
 	font-family: ProximaNova;
-	font-size: 16px;
+	font-size: 14px;
 	position: relative;
 }
 
@@ -348,21 +349,21 @@ color: #a3c83a
 	height: 11px;
 	width: 11px;
 	position: absolute;
-	right: 5px;
-	top: 12px;
+	right: 25px;
+	top: 20px;
 }
 
 .footer-menu {
 	display: flex;
 	justify-content: space-between;
-	width: 200px;
+	width: 240px;
 }
 
 .footer-menu-element-fb {
 	list-style: none;
 	background-color: #2f3590;
-	height: 40px;
-	width: 40px;
+	height: 50px;
+	width: 50px;
 	border-radius: 50%;
 	position: relative;
 }
@@ -386,8 +387,8 @@ color: #a3c83a
 .footer-menu-element-tw {
 	list-style: none;
 	background-color: #1eaeeb;
-	height: 40px;
-	width: 40px;
+	height: 50px;
+	width: 50px;
 	border-radius: 50%;
 	position: relative;
 }
@@ -411,8 +412,8 @@ color: #a3c83a
 .footer-menu-element-yt {
 	list-style: none;
 	background-color: #ea342d;
-	height: 40px;
-	width: 40px;
+	height: 50px;
+	width: 50px;
 	border-radius: 50%;
 	position: relative;
 }
@@ -436,8 +437,8 @@ color: #a3c83a
 .footer-menu-element-li {
 	list-style: none;
 	background-color: #19218c;
-	height: 40px;
-	width: 40px;
+	height: 50px;
+	width: 50px;
 	border-radius: 50%;
 	position: relative;
 }
@@ -465,8 +466,8 @@ color: #a3c83a
 	width: 11px;
 	height: 19px;
     position: absolute;
-    top: 10px;
-    left: 15px;
+    top: 15px;
+    left: 19px;
 }
 
 .footer-menu-element-tw::before {
@@ -476,8 +477,8 @@ color: #a3c83a
 	width: 19px;
 	height: 16px;
     position: absolute;
-    top: 13px;
-    left: 11px;
+    top: 17px;
+    left: 17px;
 }
 
 .footer-menu-element-yt::before {
@@ -487,8 +488,8 @@ color: #a3c83a
 	width: 21px;
 	height: 15px;
     position: absolute;
-    top: 12px;
-    left: 12px;
+    top: 17px;
+    left: 18px;
 }
 
 .footer-menu-element-li::before {
@@ -498,6 +499,6 @@ color: #a3c83a
 	width: 19px;
 	height: 19px;
     position: absolute;
-    top: 9px;
-    left: 12px;
+    top: 13px;
+    left: 16px;
 }

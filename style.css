@@ -325,6 +325,10 @@ color: #a3c83a
 	position: relative;
 }
 
+.alert {
+	border: 2px solid #fa6352;
+}
+
 .form-button:hover {
   animation: button 0.1s linear;
   animation-play-state: running;

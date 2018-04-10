@@ -13,7 +13,7 @@
 <body>
   <header class="header">
     <div class="nav-container">
-      <img src="./images/logo.png">
+      <img src="./images/logo.png" class="nav-container__image">
       <nav>
         <ul class="main-nav-menu">
           <li class="nav-menu">About</li>
@@ -100,19 +100,20 @@
   </main>
 
   <footer class="footer">
-    <div class="footer-links">
-      <form>
+      <form class="form" id="form">
         <input class="form-input-name" type="text" name="Name" placeholder="Your name" id="name">
         <input class="form-input-email" type="text" name="Email" placeholder="Your Email" id="Email">
         <button class="form-button" id="button">Join Newsletter</button>
       </form>
+      <div class="message__notsubmitted" id="formMessage">
+        <p>Ваше сообщение оправлено, спасибо!</p>
+      </div>
       <ul class="footer-menu">
         <li class="footer-menu-element-fb"><a href="https://www.facebook.com/julia.litvinenko50"></a></li>
         <li class="footer-menu-element-tw"><a href="https://www.facebook.com/julia.litvinenko50"></a></li>
         <li class="footer-menu-element-yt"><a href="https://www.facebook.com/julia.litvinenko50"></a></li>
         <li class="footer-menu-element-li"><a href="https://www.facebook.com/julia.litvinenko50"></a></li>
       </ul>
-    </div>
   </footer>
   <script src="script.js"></script>
 </body>

@@ -49,6 +49,10 @@
 	padding-right: 50px;
 }
 
+.nav-container__image {
+	margin-right: 100px;
+}
+
 .main-nav-menu {
 	display: flex;
 	flex-direction: row;
@@ -282,15 +286,53 @@ color: #a3c83a
 	position: relative;
 }
 
-.footer-links {
+.form {
 	display: flex;
-	max-width: 1105px;
-	min-width: 850px;
+	width: 735px;
 	justify-content: space-between;
 	align-items: center;
 	margin: auto;
 	position: relative;
 	top: 50px;
+	position: absolute;
+	left: 85px;
+	margin-right: 200px;
+
+}
+
+.form__submitted {
+	display: none;
+}
+
+.message__notsubmitted {
+	display: none;
+}
+
+.form__message {
+    width: 273px;
+    height: 30px;
+    padding: 20px 20px 2px 20px;
+    border: 2px solid #a3c83a;
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: ProximaNova;
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    left: 85px;
+    text-align: center;  
+    animation: form 0.5s ease-out 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes form {
+  0% {
+	transform: translate(0,0);
+  }
+  
+  100% {
+	transform: translate(0, 70%);
+  }
 }
 
 .form-input-name {
@@ -361,6 +403,9 @@ color: #a3c83a
 	display: flex;
 	justify-content: space-between;
 	width: 240px;
+	position: absolute;
+	top: 45px;
+    left: 960px;
 }
 
 .footer-menu-element-fb {

@@ -321,17 +321,24 @@ color: #a3c83a
     top: 0px;
     left: 85px;
     text-align: center;  
-    animation: form 0.5s ease-out 1;
+    animation: form 2s ease-out 1;
     animation-fill-mode: forwards;
 }
   
 @keyframes form {
   0% {
 	transform: translate(0,0);
+	opacity: 1;
   }
   
-  100% {
+  50% {
 	transform: translate(0, 70%);
+	opacity: 1;
+  }
+
+  100% {
+  	transform: translate(0, 70%);
+  	opacity: 0;
   }
 }
 

@@ -44,7 +44,7 @@
 .nav-container {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 20px;
+	padding-top: 40px;
 	padding-left: 50px;
 	padding-right: 50px;
 }
@@ -53,7 +53,9 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 500px;
+	width: 580px;
+	margin-top: 20px;
+    margin-right: 20px
 }
 
 .nav-menu {
@@ -65,15 +67,30 @@
   	font-weight: 300;
 }
 
+.nav-menu:hover {
+  animation: menu 0.2s ease-in-out 5;
+  animation-play-state: running;
+}
+  
+@keyframes menu {
+  0% {
+	transform: translate(0,0);
+  }
+  
+  100% {
+	transform: translate(0,-8%);
+  }
+}
+
 .motto-title{
 	color: #ffffff;
 	font-size: 40px;
 	text-transform: uppercase;
 	font-family: 'AvenirNext';
     font-weight: 300;
-	margin-top: 500px;
-	margin-left: 50px;
-	margin-bottom: 0px;
+	margin-top: 595px;
+	margin-left: 115px;
+	margin-bottom: 5px;
 }
 
 .span-1{
@@ -86,8 +103,8 @@ color: #a3c83a
   	font-weight: 300;
 	font-size: 15px;
 	text-transform: uppercase;
-	margin-left: 130px;
-	margin-top: 0px;
+	margin-left: 280px;
+	margin-top: 5px;
 }
 
 .span-2{
@@ -102,57 +119,74 @@ color: #a3c83a
 	display: flex;
 	justify-content: space-between;
 	margin: auto;
-	align-items: center;
-	padding-top: 80px;
+	padding-top: 110px;
 	padding-left: 0;
-	width: 900px;
-	padding-bottom: 80px;
+	width: 1185px;
+	padding-bottom: 120px;
 	list-style: none;
 	color: #ffffff;
 }
 
-
-.main-info-block {
-	width: 220px;
-	align-self: baseline;
+.main-info-image {
+	height: 50px;
 }
 
-.main-info-title{
+.main-info-block {
+	width: 285px;
+}
+
+.main-info-title {
 	font-size: 24px;
 	font-family: 'OpenSans';
   	font-weight: 300;
   	padding: 10px 0px 10px 0px;
 }
 
-.main-info-text{
+.main-info-text {
 	font-size: 14px;
 	font-family: 'ProximaNova';
   	font-weight: 300;
   	text-align: left;
-  	padding: 10px 0px 10px 0px;
+  	line-height: 1.5;
+  	padding: 20px 0px 0px 0px;
+  	height: 110px;
 }
 
-.link-white{
+.link-white {
 	color: #ffffff;
 	font-size: 14px;
 	text-decoration: none;
 	font-family: 'ProximaNova';
   	font-weight: 300;
+  	position: relative;
+}
+
+.link-white::after {
+	content: '';
+	display: inline-block;
+	background-image: url(./images/arrow.svg);
+	background-repeat: no-repeat;
+    background-size: 11px;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 3px;
+    right:-20px;
 }
 
 .article {
 	display: flex;
 	justify-content: space-between;
-	width: 900px;
+	width: 1185px;
 	margin: auto;
 	background: #ffffff;
 
 }
 
 .article-text{
-	width: 299px;
+	width: 394px;
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 30px;
 }
 
 .article-title {
@@ -162,7 +196,7 @@ color: #a3c83a
 	font-weight: 100;
 	font-size: 35px;
 	margin-top: 0px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .article-subtitle {
@@ -170,8 +204,8 @@ color: #a3c83a
 	text-transform: uppercase;
 	font-family: 'Montserrat';
   	font-weight: 300;
-	font-size: 14px;
-	margin-top: 15px;
+	font-size: 16px;
+	margin-top: 25px;
 	margin-bottom: 0px;
 }
 
@@ -180,7 +214,8 @@ color: #a3c83a
 	font-family: 'OpenSans';
   	font-weight: 300;
 	font-size: 14px;
-	margin: 10px;
+	line-height: 2.0;
+	margin: 15px 50px 5px 50px;
 }
 
 .article-link {
@@ -190,82 +225,124 @@ color: #a3c83a
 	font-size: 14px;
 }
 
+.article-link:hover {
+  animation: link 0.1s ease-in;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes link {
+  0% {
+	color: #a3c83a;
+  }
+  
+  100% {
+	color:#fa6352;
+	}
+}
+
 .article-1-highlighting {
 	position: relative;
-	height: 299px;
+	height: 394px;
 }
 
 .article-1-highlighting::before {
-	display: block;
-	width: 603px;
-	height: 299px;
+	content: '';
+	opacity: 0;
+	width: 795px;
+	height: 394px;
 	position: absolute;
 	background: rgba(0, 0, 0, 0.5);
 }
 
 .article-1-highlighting-text {
-	display: none;
-	width: 603px;
+	opacity: 0;
+	width: 790px;
 	position: absolute;
-	top: 100px;
+	top: 50%;
+	margin-top: -37px;
 	text-align: center;
 }
 
 
 .article-1-highlighting:hover .article-1-highlighting-text {
-	display:block;
+	opacity: 1;
+	transition: all 1s;
 }
 
 .article-1-highlighting:hover::before {
 	content: '';
+	opacity: 1;
+	transition: all 1s;
 }
 
 .footer {
 	background-color: #000000;
-	height: 100px;
+	height: 155px;
 	position: relative;
 }
 
 .footer-links {
 	display: flex;
-	max-width: 850px;
-	min-width: 800px;
+	max-width: 1105px;
+	min-width: 850px;
 	justify-content: space-between;
+	align-items: center;
 	margin: auto;
 	position: relative;
-	top: 31px
+	top: 50px;
 }
 
 .form-input-name {
-	width: 100px;
-	height: 16px;
+	width: 160px;
+	height: 30px;
 	padding: 10px 20px;
 	border: none;
 	border-radius: 4px;
 	font-family: ProximaNova;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .form-input-email {
-	width: 170px;
-	height: 16px;
+	width: 300px;
+	height: 30px;
 	padding: 10px 20px;
 	border: none;
 	border-radius: 4px;
 	font-family: ProximaNova;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .form-button {
-	width: 170px;
-	padding: 10px 20px;
+	width: 185px;
+	padding: 18px 20px 18px 0px;
 	border: none;
 	border-radius: 4px;
 	background-color: #a3c83a;
 	color: #ffffff;
 	font-family: ProximaNova;
-	font-size: 16px;
+	font-size: 14px;
 	position: relative;
+}
+
+.alert {
+	border: 2px solid #fa6352;
+}
+
+.form-button:hover {
+  animation: button 0.1s linear;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes button {
+  0% {
+	background-color: #a3c83a;
+  }
+  
+  100% {
+	background-color: #c7e86b;
+	}
 }
 
 .form-button::after {
@@ -276,50 +353,114 @@ color: #a3c83a
 	height: 11px;
 	width: 11px;
 	position: absolute;
-	right: 15px;
-	top: 12px;
+	right: 25px;
+	top: 20px;
 }
 
 .footer-menu {
 	display: flex;
 	justify-content: space-between;
-	width: 200px;
+	width: 240px;
 }
 
 .footer-menu-element-fb {
 	list-style: none;
 	background-color: #2f3590;
-	height: 36px;
-	width: 36px;
+	height: 50px;
+	width: 50px;
 	border-radius: 50%;
 	position: relative;
+}
+
+.footer-menu-element-fb:hover {
+  animation: fb 0.1s linear;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes fb {
+  0% {
+	background-color: #2f3590;
+  }
+  
+  100% {
+	background-color: #6267b5;
+	}
 }
 
 .footer-menu-element-tw {
 	list-style: none;
 	background-color: #1eaeeb;
-	height: 36px;
-	width: 36px;
+	height: 50px;
+	width: 50px;
 	border-radius: 50%;
 	position: relative;
+}
+
+.footer-menu-element-tw:hover {
+  animation: tw 0.1s linear;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes tw {
+  0% {
+	background-color: #1eaeeb;
+  }
+  
+  100% {
+	background-color: #64cdfa;
+	}
 }
 
 .footer-menu-element-yt {
 	list-style: none;
 	background-color: #ea342d;
-	height: 36px;
-	width: 36px;
+	height: 50px;
+	width: 50px;
 	border-radius: 50%;
 	position: relative;
+}
+
+.footer-menu-element-yt:hover {
+  animation: yt 0.1s linear;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes yt {
+  0% {
+	background-color: #ea342d;
+  }
+  
+  100% {
+	background-color: #ff7a75;
+	}
 }
 
 .footer-menu-element-li {
 	list-style: none;
 	background-color: #19218c;
-	height: 36px;
-	width: 36px;
+	height: 50px;
+	width: 50px;
 	border-radius: 50%;
 	position: relative;
+}
+
+.footer-menu-element-li:hover {
+  animation: li 0.1s linear;
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+}
+  
+@keyframes li {
+  0% {
+	background-color: #19218c;
+  }
+  
+  100% {
+	background-color: #424ab3;
+	}
 }
 
 .footer-menu-element-fb::before {
@@ -329,8 +470,8 @@ color: #a3c83a
 	width: 11px;
 	height: 19px;
     position: absolute;
-    top: 8px;
-    left: 14px;
+    top: 15px;
+    left: 19px;
 }
 
 .footer-menu-element-tw::before {
@@ -340,8 +481,8 @@ color: #a3c83a
 	width: 19px;
 	height: 16px;
     position: absolute;
-    top: 8px;
-    left: 12px;
+    top: 17px;
+    left: 17px;
 }
 
 .footer-menu-element-yt::before {
@@ -351,8 +492,8 @@ color: #a3c83a
 	width: 21px;
 	height: 15px;
     position: absolute;
-    top: 8px;
-    left: 11px;
+    top: 17px;
+    left: 18px;
 }
 
 .footer-menu-element-li::before {
@@ -362,6 +503,6 @@ color: #a3c83a
 	width: 19px;
 	height: 19px;
     position: absolute;
-    top: 8px;
-    left: 12px;
+    top: 13px;
+    left: 16px;
 }

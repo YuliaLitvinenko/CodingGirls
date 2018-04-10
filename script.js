@@ -24,6 +24,4 @@ if (name.value != "" && email.value != "") {
 	classMessage.add ("form__message");
 	classMessage.remove ("message__notsubmitted");
   }
-console.log (classMessage);
-console.log (classForm);
 }
